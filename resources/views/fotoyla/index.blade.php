@@ -3,7 +3,7 @@
 @section('content')
     <div class="lg:flex lg:justify-between">
         <div class="lg:w-32">
-            @include('leftbar')
+            @include('fotoyla.leftbar')
         </div>
         <div class="lg:flex-1 lg:mx-10 mb-6 text-center" style="max-width: 700px">
             <div class="border border-blue-400 rounded-lg px-8 py-6 ">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="lg:w-1/6 bg-blue-100 rounded-lg p-4">
-            @include('rightbar')
+            @include('fotoyla.rightbar')
         </div>
     </div>
 @endsection
