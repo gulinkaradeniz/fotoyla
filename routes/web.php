@@ -19,5 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/', 'FotoylaController');
+Route::get('/home', 'FotoylaController@index');
+Route::resource('fotoyla', 'FotoylaController');
+Route::get('/', 'FotoylaController@index');
+Route::resource('users', 'UsersController');
