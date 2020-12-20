@@ -9,8 +9,12 @@
             <div class="border border-blue-400 rounded-lg px-8 py-6 ">
                 <h1 class="mb-4 text-left font-bold">KAYIT</h1>
                 <hr class="mb-4">
-                <form method="POST" action="/users">
+                <form method="POST" action="/users" enctype="multipart/form-data">
                     @csrf
+                    <label class="h-24 w-24 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-full shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-200 hover:text-white">
+                        <span class="text-base leading-normal">Resim Yükle</span>
+                        <input type='file' name="photo" class="custom-file-input" />
+                    </label>
                     <div class="mb-2">
                         <label class="text-grey-darker text-left block">Ad Soyad</label>
                         <input type="name" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-1 py-1 rounded shadow" id="name" name="name" value="{{ old('name') }}" required>
