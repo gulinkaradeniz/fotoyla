@@ -23,9 +23,9 @@
                 </div> --}}
                 <div class="flex items-center justify-center">
                     <div class="flex border border-black">
-                        @foreach ($sayilar as $s)
-                            <button class="flex items-center justify-center w-8 h-8 text-sm font-medium border-l border-blue hover:bg-blue-200 hover:text-white focus:outline-none">{{$s}}</button>
-                        @endforeach
+                        @for ($i = 1; $i <= 10; $i++)
+                        <button class="flex items-center justify-center w-8 h-8 text-sm font-medium border-l border-blue hover:bg-blue-200 hover:text-white focus:outline-none">{{$i}}</button>
+                        @endfor
                     </div>
                 </div>
                 @foreach ($users as $user)

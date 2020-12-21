@@ -23,7 +23,7 @@
     <div id="app">
         <section class="px-8 py-4 mb-6">
             <header class="container mx-auto">
-                <img src="/images/fotoyla.png" alt="Fotoyla"  width="150px" height="150px">
+                <img src="/images/fotoyla.jpeg" alt="Fotoyla"  width="150px" height="150px">
             </header>
         </section>
         <section class="px-8">
