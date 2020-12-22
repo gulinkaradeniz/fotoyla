@@ -18,22 +18,15 @@
                         @endfor
                     </div>
                 </div>
-                
-                {{-- @foreach ($users as $user)
-                <div class="flex justify-center">
-                    
-                    <section class="grid-center grid-cols-3 max-w-6xl h-15 w-1/2">
-                    <a class="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl bg-gray-500 transition-shadow duration-300">
-                        <img src="{{asset('/storage/photo/'.$user->photo)}}" class="absolute object-cover top-0 left-0 w-full h-full" alt="photo">
-                      <div class="card_bottom relative flex justify-between text-black">
-                        <div class="text-sm font-semibold">{{$user->name}}</div>
-                      </div>
-                    
-                    </a>
-                    </section>
-                </div>
-                @endforeach --}}
-
+                @foreach ($image as $i)
+                    <div class="flex justify-center">
+                        <section class="grid-center grid-cols-3 max-w-6xl h-15 w-1/2">
+                        <a class="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl bg-gray-500 transition-shadow duration-300">
+                            <img src="{{asset('/storage/photo/'.$i->photo)}}" class="absolute object-cover top-0 left-0 w-full h-full" alt="photo">
+                        </a>
+                        </section>
+                    </div>
+                @endforeach
             </div>
             
         </div>

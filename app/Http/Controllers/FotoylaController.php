@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Images;
 class FotoylaController extends Controller
 {
     public function index()
     {
-        $users=User::all();
-        return view('fotoyla.index',compact('users'));
+        $image=Images::all()->random(1);
+        return view('fotoyla.index',compact('image'));
     }
 }
