@@ -17,7 +17,7 @@
             <label class="text-lg mb-4 block">
                 {{ Auth::user()->name }}
             </label>
-
+            <a href="/users/{{ Auth::user()->id}}/upload">Resim Ekle</a>
             <div>
                 <a class="mb-4 relative rounded-full py-1 px-1 lg:p-1 text-sm lg:text-base hover:bg-red-300 hover:text-white" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Çıkış Yap</a>
 

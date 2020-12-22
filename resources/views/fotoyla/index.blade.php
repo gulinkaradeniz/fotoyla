@@ -11,16 +11,6 @@
                 <button type="submit" class="bg-blue-500 hover:bg-blue-400 hover:text-white rounded-lg shadow py-2 px-2 text-white">Sadece Baylar</button>
                 <button type="submit" class="bg-blue-500 hover:bg-blue-400 hover:text-white rounded-lg shadow py-2 px-2 text-white">Sadece Bayanlar</button>
                 <h1 class="mb-6 pt-6 mx-auto text-center">Aşağıdaki kullanıcı için kaç puan verirsiniz ?</h1>
-                {{--  <div class="mx-auto max-w-sm text-center flex flex-wrap justify-center">
-                    @foreach ($sayilar as $s)
-                        <div class="flex items-center mr-4 mb-4">
-                        <input id="radio1" type="radio" name="radio" class="hidden" checked />
-                        <label for="radio1" class="flex items-center cursor-pointer">
-                            <span class="w-4 h-4 inline-block mr-1 rounded-full border border-grey"></span>
-                            {{$s}}</label>
-                        </div>
-                    @endforeach
-                </div> --}}
                 <div class="flex items-center justify-center">
                     <div class="flex border border-black">
                         @for ($i = 1; $i <= 10; $i++)
@@ -28,7 +18,8 @@
                         @endfor
                     </div>
                 </div>
-                @foreach ($users as $user)
+                
+                {{-- @foreach ($users as $user)
                 <div class="flex justify-center">
                     
                     <section class="grid-center grid-cols-3 max-w-6xl h-15 w-1/2">
@@ -41,7 +32,7 @@
                     </a>
                     </section>
                 </div>
-                @endforeach
+                @endforeach --}}
 
             </div>
             

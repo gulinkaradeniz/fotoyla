@@ -23,3 +23,7 @@ Route::get('/home', 'FotoylaController@index');
 Route::resource('fotoyla', 'FotoylaController');
 Route::get('/', 'FotoylaController@index');
 Route::resource('users', 'UsersController');
+Route::get('users/{id}/upload', 'UsersController@upload');
+Route::post('/users/{id}/upload', 'UsersController@upload_create');
+Route::post('/addimage', 'UsersController@upload_create')->name('addimage');
+Route::post('/remove_image', 'UsersController@remove_image');
