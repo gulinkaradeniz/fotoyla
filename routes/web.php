@@ -27,3 +27,4 @@ Route::get('users/{id}/upload', 'UsersController@upload');
 Route::post('/users/{id}/upload', 'UsersController@upload_create');
 Route::post('/addimage', 'UsersController@upload_create')->name('addimage');
 Route::post('/remove_image', 'UsersController@remove_image');
+Route::post('/score/{id}', 'UsersController@score');

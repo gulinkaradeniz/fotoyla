@@ -52,4 +52,15 @@ class UsersController extends Controller
         //return redirect()->route('medicines.show',compact('medicine','company','image'));
 
     }
+    public function score(Request $request)
+    {
+        $request['scorer_id']=$request->id;
+        $data = $request->validate([
+            'user_id' => 'required',
+            'score'=> 'required',
+            'scorer_id'=>'required'
+        ]);
+        $score = tap(new \App\Scores($data))->save();
+        return redirect(url('/'));
+    }
 }
